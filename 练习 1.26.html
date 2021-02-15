@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="##" name="regisiter" method="POST">
+    用户:<br><input name="name" type="text" size="15"><br><br>
+    密码:<br><input name="mima" type="password" size="15" maxlength="15" oncopy="return false" oncut="return false" onpaste="return false"><br><br>
+    确认密码:<br><input name ="mima" type="password" size="15" maxlength="15" oncopy="return false" oncut="return false" onpaste="return false"><br><br>
+    请选择一个你最闲的时候<br>
+    <label><input name="time" type="radio" value="checkbox"/> 早上</label>
+    <label><input name="time" type="radio" value="checkbox"/> 中午</label>
+    <label><input name="time" type="radio" value="checkbox" checked="checked"/> 晚上</label><br>
+    <input name="ensure" type="checkbox" value="checkbox">我确认<br><br>
+    <input name="button" type="button" value="一个暂时没啥用的普通按钮(不过可以添加功能）"onclick="#"/><br><br>
+    选择自己喜欢的口味：<br>
+    <input name="checkbox" type="checkbox" value="checkbox">酸
+    <input name="checkbox" type="checkbox" value="checkbox">甜
+    <input name="checkbox" type="checkbox" value="checkbox">苦
+    <input name="checkbox" type="checkbox" value="checkbox">辣
+    <input type="reset" value="重置一下">
+    <br>
+    
+    <select name="jiang1" >
+        <option value="番茄酱">番茄酱</option>
+        <option value="沙拉酱">沙拉酱</option>
+        <option value="辣椒酱">辣椒酱</option>
+    </select>
+    <select name="jiang2" size="3"multiple>
+        <option value="番茄酱">番茄酱</option>
+        <option value="沙拉酱">沙拉酱</option>
+        <option value="辣椒酱">辣椒酱</option>
+    </select><br>
+    选择一个颜色吧
+    <input type="color" name="color"><br><br>
+    接下来是一个搜索框
+    <input type="search" name="search"><br><br>
+    datalist使用案例(这里将限制内容）<br>
+    <input list="cars" placeholder="输入cars"/>
+    <datdlist id="cars">
+        <option value="BMW">
+            <option value="Ford">
+                <option value="Volvo">
+    </datdlist>
+<textarea name="content" rows="3"cols="40" wrap="virtual">
+    你需要确认以上信息属实，阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴
+    </textarea>
+    <br><br>
+    <input type="text" required pattern="[0-9][a-zA-Z]{5}">这样就只能输入一个0-9后加五个字母，大小写不限<br><br>
+    <input type="datetime-local"value="本地时间"><br>
+    <input type="submit" value="提交 提交啦！"><br><br>
+    <input type="button" value="点一下结束哦" onclick="window.close()">
+</form>
+</body>
+</html>
